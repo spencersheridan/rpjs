@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <h1>Chat with Parse Rest API</h1>
+                <table class="table table-bordered table-striped">
+                    <caption>Messages</caption>
+                    <thead>
+                        <th>Username</th>
+                        <th>Message</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">No Messages</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- row-fluid -->
+            
+            <div class="row-fluid">
+                <form id="new-user">
+                    <input 
+                           type="text" 
+                           name="username"
+                           placeholder="username" />
+                    <input
+                           type="text"
+                           name="message"
+                           placeholder="Message" />
+                    <a id="send" class="btn btn-primary">Send</a>
+                </form>
+            </div> <!-- row-fluid -->
+        </div> <!-- container-fluid -->
+    </body>
+    
+</html>
